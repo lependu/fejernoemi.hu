@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'mayonaise';
+  src: url('/static/fonts/mayonaise.eot');
+  src: url('/static/fonts/mayonaise.eot?iefix') format('eot'),
+    url('/static/fonts/mayonaise.woff') format('woff'),
+    url('/static/fonts/mayonaise.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo300';
+  src: url('/static/fonts/museo300.eot');
+  src: url('/static/fonts/museo300.eot?iefix') format('eot'),
+    url('/static/fonts/museo300.woff') format('woff'),
+    url('/static/fonts/museo300.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'museo500';
+  src: url('/static/fonts/museo500.eot');
+  src: url('/static/fonts/museo500.eot?iefix') format('eot'),
+    url('/static/fonts/museo500.woff') format('woff'),
+    url('/static/fonts/museo500.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+html, body, p, ul, li, i {
+  font-family: 'museo300';
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1rem;
+  color: rgba(31, 31, 31, 1);
+}
+h1 {
+  font-family: 'museo500';
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 1rem;
+  color: rgba(2, 86, 91, 1);
+}
+h2 {
+  font-family: 'mayonaise';
+  font-weight: 500;
+  text-transform: uppercase;
+  color: rgba(15, 143, 156, 1);
+  font-size: 2rem;
+  line-height: 4rem;
+}
+h3 {
+  font-family: 'museo500';
+  font-weight: 500;
+  font-style: normal;
+  margin-right: 1rem;
+  color: rgba(15, 143, 156, 1);
+}
+p {
+  line-height: 1.5;
+  text-align: justify;
+}
+i {
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+
+a.active, a:active {
+  color: rgba(221,221,221,1) !important;
+}
+
+.title-pink h2 {
+  color: rgba(216,116,96,1);
+}
+
+.title-orange h2 {
+  color: rgba(210,87,7,1);
+}
+
+.title-red h2 {
+  color: rgba(186,21,29,1);
+}
+
+.title-green h2 {
+  color: rgba(142,160,29,1);
+}

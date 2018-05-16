@@ -1,0 +1,112 @@
+#site-navigation {
+  position: fixed;
+  width: 100%;
+  z-index: 9;
+  background-image: url('/static/backgrounds/menu.png');
+  background-position: top left;
+  background-repeat: repeat;
+}
+
+.content-wrapper {
+  width: 90%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.navigation-mobile-brand {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.navigation-popup {
+  display: block;
+  list-style: none;
+  min-height: 100vh;
+}
+
+.list-label {
+  color: rgba(66,66,66,1);
+  padding: 0.5rem;
+}
+
+header.page-header {
+  display: flex;
+  width: 100%;
+  margin: 0 auto;
+  height: 60px;
+  align-items: center;
+}
+
+header.page-header h1 {
+  flex: 0 0 auto;
+}
+
+header.page-header i {
+  flex: 0 1 100%;
+  height: 1rem;
+  background: repeating-linear-gradient(
+    135deg,
+    #ccc,
+    #ccc 1px,
+    #bbb 1px,
+    #bbb 2px,
+    #ccc 2px,
+    #ccc 3px,
+    transparent 3px,
+    transparent 6px
+  );
+  background-repeat: repeat-x;
+}
+
+.md > ul {
+  list-style: '- ' inside none;
+}
+
+.md-adult > ul {
+  list-style: none;
+  padding: 0 0 0 1rem;
+}
+
+.md-contact {
+  min-height: 80vh;
+}
+
+/* Carousel customization */
+ul.slider li {
+  background: transparent !important;
+  margin: 0 auto !important;
+}
+
+ul.control-dots > li.dot {
+  width: 1rem !important;
+  height: 1rem !important;
+  margin: 0 0.5rem !important;
+}
+
+/* Preloads images */
+
+body:before {
+  display: none;
+  content: url('/static/backgrounds/home.png')
+    url('/static/backgrounds/menu.png')
+    url('/static/footers/home.png')
+    url('/static/elements/home.png')
+    url('/static/backgrounds/white.png')
+    url('/static/backgrounds/footer.png')
+    url('/static/backgrounds/kapcsolat.png')
+    url('/static/backgrounds/munka.png')
+    url('/static/backgrounds/felnott.png')
+    url('/static/backgrounds/gyerek.png')
+    url('/static/elements/portre.png')
+    url('/static/elements/felnott.png')
+    url('/static/elements/gyerek.png')
+    url('/static/elements/flags.png')
+    url('/static/elements/munka.png')
+    url('/static/elements/ceg.png')
+    url('/static/elements/kapcsolat.png')
+    url('/static/footers/footer.png')
+    url('/static/footers/felnott.png')
+    url('/static/footers/line.png');
+}

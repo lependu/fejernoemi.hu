@@ -1,0 +1,56 @@
+{
+  "name": "fejernoemi.hu",
+  "version": "0.1.0",
+  "description": "next.js static personal site",
+  "engines": {
+    "node": ">=6"
+  },
+  "private": true,
+  "scripts": {
+    "analyze": "ANALYZE=1 next build",
+    "build": "next build",
+    "dev": "next dev",
+    "export": "next export",
+    "lint": "standard --fix",
+    "test": "standard && NODE_ENV=test jest"
+  },
+  "keywords": [
+    "nodejs",
+    "nextjs"
+  ],
+  "author": "<lependu@protonmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-jest": "^22.4.3",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "jest": "^22.4.2",
+    "jest-environment-jsdom": "^22.4.3",
+    "jest-environment-jsdom-global": "^1.0.3",
+    "postcss-loader": "^2.1.5",
+    "raw-loader": "^0.5.1",
+    "react-markdown": "^3.3.2",
+    "react-test-renderer": "^16.3.2",
+    "standard": "^11.0.1",
+    "webpack": "^3.12.0",
+    "webpack-bundle-analyzer": "^2.12.0"
+  },
+  "dependencies": {
+    "@hocs/with-lifecycle": "^0.4.0",
+    "@hocs/with-match-media-props": "^0.3.0",
+    "babel-plugin-lodash": "^3.3.2",
+    "next": "^5.1.0",
+    "next-compose-plugins": "^2.1.1",
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2",
+    "react-responsive-carousel": "^3.1.37",
+    "recompose": "^0.27.0"
+  },
+  "greenkeeper": {
+    "ignore": [
+      "webpack",
+      "next"
+    ]
+  }
+}
