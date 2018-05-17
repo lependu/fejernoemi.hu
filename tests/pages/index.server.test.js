@@ -11,7 +11,7 @@ const MockComponent = class MockComponent extends Component {
   }
 }
 
-describe('index page template | server side', () => {
+describe('Pages | index | server side', () => {
   it('#getInitialProps | with valid asPath', () => {
     let Enchanced = enchance(MockComponent)
 

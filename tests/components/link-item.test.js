@@ -5,38 +5,6 @@ import { withRouter } from 'next/router'
 import { LinkItemComponent, enchance } from 'components/link-item'
 
 describe('Component | link-item', () => {
-  test('LinkItemComponent | snapshot | not active', () => {
-    let wrapper = renderer.create(<LinkItemComponent />)
-    let tree = wrapper.toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-
-  test('LinkItemComponent | snapshot | active | no trailing slash', () => {
-    let props = {
-      router: {
-        asPath: '/hello'
-      },
-      as: '/hello'
-    }
-
-    let wrapper = renderer.create(<LinkItemComponent {...props} />)
-    let tree = wrapper.toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-
-  test('LinkItemComponent | snapshot | active | with trailing slash', () => {
-    let props = {
-      router: {
-        asPath: '/hello/'
-      },
-      as: '/hello'
-    }
-
-    let wrapper = renderer.create(<LinkItemComponent {...props} />)
-    let tree = wrapper.toJSON()
-    expect(tree).toMatchSnapshot()
-  })
-
   test('enchanced with props', () => {
     let Enchanced = enchance(LinkItemComponent)
     let EnchancedWithRouter = withRouter(Enchanced)
@@ -69,5 +37,37 @@ describe('Component | link-item', () => {
     subject.find('a').simulate('click', e)
     expect(e.preventDefault.mock.calls.length).toBe(1)
     expect(router.push.mock.calls).toEqual(expected)
+  })
+
+  test('LinkItemComponent | snapshot | not active', () => {
+    let wrapper = renderer.create(<LinkItemComponent />)
+    let tree = wrapper.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  test('LinkItemComponent | snapshot | active | no trailing slash', () => {
+    let props = {
+      router: {
+        asPath: '/hello'
+      },
+      as: '/hello'
+    }
+
+    let wrapper = renderer.create(<LinkItemComponent {...props} />)
+    let tree = wrapper.toJSON()
+    expect(tree).toMatchSnapshot()
+  })
+
+  test('LinkItemComponent | snapshot | active | with trailing slash', () => {
+    let props = {
+      router: {
+        asPath: '/hello/'
+      },
+      as: '/hello'
+    }
+
+    let wrapper = renderer.create(<LinkItemComponent {...props} />)
+    let tree = wrapper.toJSON()
+    expect(tree).toMatchSnapshot()
   })
 })

@@ -5,7 +5,7 @@
 /* eslint-env jest */
 import { pageProps, getPropsFromPath } from 'lib/page-props'
 
-describe('page-props | Client side', () => {
+describe('lib | page-props | Client side', () => {
   test('#getPropsFromPath extracts props', () => {
     jsdom.reconfigure({
       url: 'https://www.example.com/'

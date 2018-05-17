@@ -12,7 +12,7 @@
     "dev": "next dev",
     "export": "next export",
     "lint": "standard --fix",
-    "test": "standard && NODE_ENV=test jest"
+    "test": "standard --fix && NODE_ENV=test jest"
   },
   "keywords": [
     "nodejs",

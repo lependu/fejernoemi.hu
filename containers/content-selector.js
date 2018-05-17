@@ -1,4 +1,4 @@
-import { branch, compose, renderComponent } from 'recompose'
+import { branch, compose, pure, renderComponent } from 'recompose'
 import PageIndex from 'components/page-index'
 import PageWork from 'components/page-work'
 import PageAdult from 'components/page-adult'
@@ -6,8 +6,6 @@ import PageOrg from 'components/page-org'
 import PageChild from 'components/page-child'
 import PageGallery from 'components/page-gallery'
 import PageContact from 'components/page-contact'
-
-export const ContentSelector = ({ isMobile, page }) => <div />
 
 export const contentSwitch = states =>
   compose(...states.map(state =>
@@ -32,4 +30,4 @@ export const enchance = compose(
   ])
 )
 
-export default enchance(ContentSelector)
+export default enchance(pure)
