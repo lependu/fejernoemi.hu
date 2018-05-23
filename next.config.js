@@ -1,6 +1,5 @@
 const withPlugins = require('next-compose-plugins')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
-const { pageProps } = require('./lib/page-props')
 
 const { ANALYZE } = process.env
 
@@ -33,8 +32,8 @@ const nextConfig = {
 
     return config
   },
-  exportPathMap: () => {
-    return pageProps
+  exportPathMap: defaultPathMap => {
+    return defaultPathMap
   }
 }
 
