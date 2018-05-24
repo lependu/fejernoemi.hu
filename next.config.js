@@ -1,9 +1,8 @@
-const withPlugins = require('next-compose-plugins')
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer')
 
 const { ANALYZE } = process.env
 
-const nextConfig = {
+module.exports = {
   webpack: (config, options) => {
     // bundle analyzer
     if (ANALYZE) {
@@ -36,5 +35,3 @@ const nextConfig = {
     return defaultPathMap
   }
 }
-
-module.exports = withPlugins([], nextConfig)

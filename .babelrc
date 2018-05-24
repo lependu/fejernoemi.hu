@@ -23,8 +23,8 @@
       "root": ["."],
       "alias": {
         "components": "./components",
-        "containers": "./containers",
-        "contents": "./contents",
+        "data": "./data",
+        "hocs": "./hocs",
         "lib": "./lib",
         "pages": "./pages",
         "styles": "./styles",

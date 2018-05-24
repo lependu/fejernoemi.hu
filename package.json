@@ -23,6 +23,7 @@
   "devDependencies": {
     "babel-core": "7.0.0-bridge.0",
     "babel-jest": "^22.4.3",
+    "babel-plugin-lodash": "^3.3.2",
     "babel-plugin-module-resolver": "^3.1.1",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
@@ -31,22 +32,18 @@
     "jest-environment-jsdom-global": "^1.0.3",
     "postcss-loader": "^2.1.5",
     "raw-loader": "^0.5.1",
-    "react-markdown": "^3.3.2",
     "react-test-renderer": "^16.3.2",
+    "recompose": "^0.27.0",
+    "snarkdown": "^1.2.2",
     "standard": "^11.0.1",
     "webpack": "^3.12.0",
     "webpack-bundle-analyzer": "^2.13.1"
   },
   "dependencies": {
-    "@hocs/with-lifecycle": "^0.4.0",
-    "@hocs/with-match-media-props": "^0.3.0",
-    "babel-plugin-lodash": "^3.3.2",
     "next": "^6.0.3",
-    "next-compose-plugins": "^2.1.1",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-responsive-carousel": "^3.1.37",
-    "recompose": "^0.27.0"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-responsive-carousel": "^3.1.37"
   },
   "greenkeeper": {
     "ignore": [

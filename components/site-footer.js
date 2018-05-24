@@ -1,31 +1,30 @@
+import t from 'lib/translate'
 const year = new Date().getFullYear()
 
-const background = `url('/static/backgrounds/footer.png') bottom left repeat`
-
-const wrapperStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  minHeight: '80px'
-}
-
-const childMobile = {
-  flex: '1 0 100%'
-}
-
-const childDesktop = {
-  flex: '0 0 auto'
-}
-
-export default ({ isMobile }) =>
-  <footer style={{ background }}>
-    <div className='content-wrapper' style={wrapperStyle}>
-      <p style={isMobile ? childMobile : childDesktop}>
-        FEJÉR NOÉMI HONLAPJA 2013-{year}
-      </p>
-      <p style={isMobile ? childMobile : childDesktop}>
-        DESIGN: SZONJA KISS
-      </p>
+export default () =>
+  <footer>
+    <div className='content-wrapper footer-wrapper'>
+      <p>{t('web')}-{year}</p>
+      <p>{t('design')}</p>
     </div>
+    <style jsx>{`
+      footer {
+        background: url('/static/backgrounds/footer.png') bottom left repeat;
+      }
+      .footer-wrapper {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         min-height: 80px
+      }
+      p {
+       flex: 0 0 auto;
+      }
+      @media screen and (max-width: 799px) {
+        p {
+         flex: 1 0 100%;
+        }
+      }
+    `}</style>
   </footer>

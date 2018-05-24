@@ -12,7 +12,6 @@ export const LinkItemComponent = ({
   as,
   children,
   handleClick,
-  href,
   router,
   style = baseStyle
 }) =>
@@ -30,7 +29,7 @@ export const LinkItemComponent = ({
 export const enchance = withHandlers({
   handleClick: props => e => {
     e.preventDefault()
-    props.router.push(props.href, props.as)
+    props.router.push(props.as, props.as)
   }
 })
 

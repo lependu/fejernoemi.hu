@@ -9,7 +9,7 @@ describe('Component | link-item', () => {
     let Enchanced = enchance(LinkItemComponent)
     let EnchancedWithRouter = withRouter(Enchanced)
     let wrapper = mount(
-      <EnchancedWithRouter as='/alpha' href='/?id=alpha' style={{ margin: 0 }}>
+      <EnchancedWithRouter as='/alpha' style={{ margin: 0 }}>
         <p>children</p>
       </EnchancedWithRouter>
     )
@@ -17,7 +17,6 @@ describe('Component | link-item', () => {
 
     expect(subject).toContain('as')
     expect(subject).toContain('handleClick')
-    expect(subject).toContain('href')
     expect(subject).toContain('router')
     expect(subject).toContain('style')
   })
@@ -27,12 +26,12 @@ describe('Component | link-item', () => {
     let e = { preventDefault: jest.fn() }
     let Enchanced = enchance(LinkItemComponent)
     let subject = mount(
-      <Enchanced href='/?id=alpha' as='/alpha' style={{ margin: 0 }}
+      <Enchanced as='/alpha' style={{ margin: 0 }}
         router={router}>
         <p>hello</p>
       </Enchanced>
     )
-    let expected = [['/?id=alpha', '/alpha']]
+    let expected = [['/alpha', '/alpha']]
 
     subject.find('a').simulate('click', e)
     expect(e.preventDefault.mock.calls.length).toBe(1)

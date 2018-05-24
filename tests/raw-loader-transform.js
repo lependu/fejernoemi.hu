@@ -1,5 +1,5 @@
 module.exports = {
-  process (src) {
-    return `module.exports = ${JSON.stringify(src)}`
+  process () {
+    return `module.exports = 'RAW-LOADER-FILE-MOCK'`
   }
 }

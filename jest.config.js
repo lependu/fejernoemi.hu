@@ -1,6 +1,6 @@
 module.exports = {
   collectCoverageFrom: [
-    '{containers,contents,components,lib,pages}/**/*.{js,md}'
+    '{components,hocs,lib,pages}/**/*.{js}'
   ],
   setupFiles: ['<rootDir>/jest.setup.js'],
   testPathIgnorePatterns: [
